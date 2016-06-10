@@ -1,0 +1,112 @@
+// Add custom font
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+$font-family-base: 'Lato', sans-serif;
+
+// Custom Variable
+// $font-size-base:        12px;
+$border-radius-small:     2px;
+$border-radius-base:      2px;
+$border-radius-large:     2px;
+
+
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+
+
+// Helper Class
+
+// border
+.nb  { border:            0 !important}
+.nb-t{ border-top:        0 !important}
+.nb-b{ border-bottom:     0 !important}
+.nb-l{ border-left:       0 !important}
+.nb-r{ border-right:      0 !important}
+
+// padding
+.p-0 { padding:           0 !important}
+
+.p-t { padding-top:       $padding-base-horizontal !important}
+.p-t-0 { padding-top:     0 !important}
+
+.p-b { padding-bottom:    $padding-base-horizontal !important}
+.p-b-0 { padding-bottom:  0 !important}
+
+.p-l { padding-left:      $padding-base-vertical !important}
+.p-l-0 { padding-left:    0 !important}
+
+.p-r { padding-right:     $padding-base-vertical !important}
+.p-r-0 { padding-right:   0 !important}
+.p-r-5 { padding-right:   5px !important}
+
+// margin
+.m-0 { margin:            0 !important}
+
+.m-t { margin-top:        $line-height-computed !important}
+.m-t-0 { margin-top:      0 !important}
+.m-t-5 { margin-top:      5px !important}
+.m-t-10 { margin-top:     10px !important}
+.m-t-15 { margin-top:     15px !important}
+.m-t-20 { margin-top:     20px !important}
+.m-t-40 { margin-top:     40px !important}
+
+.m-b { margin-bottom:     $line-height-computed !important}
+.m-b-0 { margin-bottom:   0 !important}
+.m-b-10 { margin-bottom:  10px !important}
+.m-b-15 { margin-bottom:  15px !important}
+.m-b-20 { margin-bottom:  20px !important}
+.m-b-40 { margin-bottom:  40px !important}
+
+.m-l { margin-left:       $line-height-computed !important}
+.m-l-0 { margin-left:     0 !important}
+
+.m-r { margin-right:      $line-height-computed !important}
+.m-r-0 { margin-right:    0 !important}
+.m-r-5 { margin-right:    5px !important}
+
+
+// Bootstrap Custom Template Styles
+body {
+  // padding-top: 50px;
+  padding-bottom : 10px;
+}
+
+@media (min-width: $screen-md-min) {
+  .container{
+    width: 80%;
+    max-width: 1000px;
+  }
+}
+
+a:focus{
+  outline: none;
+}
+
+// panel
+
+.panel{
+  &.panel-pic{
+    .panel-body{
+      padding: 5px;
+
+      img{
+        width: 100%;
+        max-width: 150px;
+        max-height: 150px;
+      }
+    }
+
+    .panel-footer{
+      padding: 5px;
+      font-size: 11px;
+      background-color: #fff;
+
+      a{
+        color: #666;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+

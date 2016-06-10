@@ -1,0 +1,17 @@
+{
+  "name": "blank",
+  "version": "0.0.1",
+  "homepage": "http://lupekz.net",
+  "authors": [
+    "lupekz"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.6",
+    "fontawesome": "~4.6.2"
+  }
+}
